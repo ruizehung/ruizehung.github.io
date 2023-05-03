@@ -61,12 +61,15 @@ In my case, I served as the co-president of the competitive programming club, pa
 
 ## My experience at Georgia Tech
 
-There are many aspects of my experience at Georgia Tech. Since this article is not dedicated towards my experience at Georgia Tech, I just desribe it in a genreal way that would hopefully still shed some light on how is it like studying CS at Georgia Tech. 
+Since this article is not dedicated towards my experience at Georgia Tech, I just desribe in a very genreal way that would hopefully still shed some light on how is it like studying CS at Georgia Tech. 
 
+The School of Computer Science within the College of Computing offers a variety of high-quality, well-designed courses. For example, CS 2110 (Computing Organization and Programming), CS 2200 (Computer Systems and Networks), and CS 3251 (Computer Networking 1) are taught by exceptional professors who helped me build a solid CS foundation. The professors generally assign reasonable projects and exams; as long as you invest time and effort, you can expect good grades.
 
+As for research opportunities, there is a Undergraduate Research Opportunities in Computing (UROC) job fair at the beginning of each semester where professors present their research and recruit students. (This is how I got into anti-cheating research.) Alternatively, reaching out to professors with research interests that align with yours via email works pretty well too.
 
-Looking backward, I’m grateful that I didn’t get into UCB and UCLA
+In terms of career resources, Georgia Tech hosts one of the best career fairs. You are able to talk to quite a lot of companies for potential internship or full-time opportunities. Moreover, Georgia Tech allows international students to do internship/co-op during regular semester and not just during summer. Georgia Tech will enroll you in a 12-credit internship course for you to maintain a full-time students during your internship, which is very nice!
 
+Overall, attending Georgia Tech for Computer Science is a solid choice. Reflecting on my experience, I no longer dwell on not receiving transfer admissions from UCB EECS, UCLA, or Johns Hopkins.
 
 <a name="advice-to-people"></a>
 
