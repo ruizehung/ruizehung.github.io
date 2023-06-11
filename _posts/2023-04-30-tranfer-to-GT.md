@@ -5,12 +5,13 @@ permalink: /posts/2023/04/transfer-to-GT/
 tags:
   - College
   - Life
+categories:
+  - Academic
 ---
 
 In February 2023, a student from the ACM Club at De Anza College invited me to speak at an out-of-state university transfer panel. There were many amazing panelists, but too little time for us to share everything. So I decided to put my thoughts and experiences here 🙂
 
 ## Table Of Contents
-- [Table Of Contents](#table-of-contents)
 - [Why I chose to transfer to a private university/out of the UC/CSU system?](#why-i-chose-to-transfer-to-a-private-universityout-of-the-uccsu-system)
 - [How I Prepared for Transfer Applications at De Anza: Academically and Non-Academically](#how-i-prepared-for-transfer-applications-at-de-anza-academically-and-non-academically)
   - [Academically](#academically)
@@ -54,7 +55,7 @@ In addition to taking classes at De Anza College, I also enrolled in high-qualit
 ------
 As far as I can tell, transfer admission competition is becoming increasingly fierce each year, and a high GPA alone is not enough to secure a spot at top colleges. Therefore, it's essential to engage in a diverse range of extracurricular activities, such as joining clubs, gaining leadership and volunteer experience, obtaining internships, and earning awards from competitions … etc.
 
-In my case, I served as the co-president of the competitive programming club, participated in the [NASA L'SPACE Program](https://www.lspace.asu.edu/) (I became the principal investigator of my team and was close to getting $10k from NASA to fund my proposal), volunteered at various events (e.g., tree planting, video editing, and working on CS projects), and competed at [ACM International Collegiate Programming Contest (ICPC)](https://icpc.global/) Division 2 (at that time I haven’t taken data structure course and didn’t know what a hash map is 🤣, nevertheless we got the 14th place out of 86 teams), competed at [American Mathematical Association of Two-Year Colleges (AMATYC)](https://amatyc.org/) and got 1st place at De Anza college and top 30 in the U.S., and worked as a flea-market assistant once per month (I had to woke up at 4:30 a.m. each time 😭).
+In my case, I served as the co-president of the competitive programming club, participated in the [NASA L'SPACE Program](https://www.lspace.asu.edu/) (I became the principal investigator of my team and was close to getting $10k from NASA to fund my proposal), volunteered at various events (e.g., tree planting, video editing, and working on CS projects), and competed at [ACM International Collegiate Programming Contest (ICPC)](https://icpc.global/) Division 2 (at that time I hadn't taken data structure course and didn’t even know how to use a hash map 🤣, nevertheless we got the 14th place out of 86 teams), competed at [American Mathematical Association of Two-Year Colleges (AMATYC)](https://amatyc.org/) and got 1st place at De Anza college and top 30 in the U.S., and worked as a flea-market assistant once per month (I had to woke up at 4:30 a.m. each time 😭).
 
 
 <a name="gt-experience"></a>
@@ -99,7 +100,7 @@ It's not the end of the world if you don't get into your dream school. Remember 
 ## Recommended Resources and Opportunities
 
 ### CS
-For CS students checkout [CS50 from Harvard](https://cs50.harvard.edu/college/2023/spring/). It is by far the best intro CS course I've ever seen online and is completed offered for free. The course covers quite a wide range of topics and the instructor David J. Malan is an amazing lecturer. I highly recommend this class for those who wants to enhance their CS fundamentals.
+For CS students, checkout [CS50 from Harvard](https://cs50.harvard.edu/college/2023/spring/). It is by far the best intro CS course I've ever seen online and is completely offered for free. The course covers quite a wide range of topics, and the instructor David J. Malan is an absolutely amazing lecturer. I highly recommend this course for those who wants to enhance their CS fundamentals.
 
 ### Math
 For Math related courses, I recommend checking out 
