@@ -1,5 +1,5 @@
 ---
-title: 'internalizing Python `bisect_right()` and `bisect_left()`'
+title: 'Internalizing Python `bisect_right()` and `bisect_left()`'
 date: 2023-06-11
 permalink: /posts/2023/06/python-bisect/
 tags:
@@ -9,7 +9,6 @@ categories:
   - CS
 ---
 
-# Binary Search 
 Binary search is a popular topic in coding interviews. I was struggling with finding the right template for implementing binary search as it's annoying to get the equal sign or less than equal sign correctly in the right place. Eventually I decided to use a template similar to `bisect_right()` and `bisect_left()` in Python `bisect` library.
 
 Here I'm going to share how I internalize `bisect_right()` and `bisect_left()` so that I no longer need to memorize it.
