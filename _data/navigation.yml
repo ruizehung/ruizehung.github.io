@@ -3,23 +3,23 @@ main:
   - title: "Blog Posts"
     url: /posts/
 
+  - title: "Categories"
+    url: /categories/  
+
   - title: "Projects"
     url: /projects/
 
   - title: "Publications"
     url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/
+  # - title: "Teaching"
+  #   url: /teaching/
 
   - title: "CV"
     url: /cv/
 
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
 
 # Ideas:
 # People who I admire, personal website I like
