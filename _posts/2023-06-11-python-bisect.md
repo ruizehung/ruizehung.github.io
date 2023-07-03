@@ -18,11 +18,11 @@ Of course, if your interviewer gives you a green light to use Python's built-in 
 # Python's bisect_right and bisect_left
 `bisect_right` (also known as `bisect`) and `bisect_left` perform binary search operations on sorted lists, returning the index where an element needs to be inserted to maintain the sorted order.
 
-1. `bisect_right`: This function returns the insertion point for `x` in `a` to maintain sorted order. If `x` already appears in the list, the insertion point is after (to the right of) any existing entries. In other words, the returned index `i` partitions the array into two halves such that, all elements less than or equal to `x` are in `a[:i]` and all elements greater than `x` are in `a[i:]`.
+1. `bisect_right`: Given a sorted list `a`, find the **right** most insertion position (i.e. index) for value `x` to maintain sorted order. If `x` already appears in the list, the insertion point is after (to the right of) any existing entries. In other words, the returned index `i` partitions the list into two halves such that, all elements less than or equal to `x` are in `a[:i]` and all elements greater than `x` are in `a[i:]`.
 
-2. `bisect_left`: This function works similarly to `bisect_right`, but if `x` already appears in the list, the insertion point returned is the first (or leftmost) occurrence of `x`. Therefore, the returned index `i` partitions the array into two halves such that, all elements less than `x` are in `a[:i]` and all elements greater than or equal to `x` are in `a[i:]`.
+2. `bisect_left`: Given a sorted list `a`, find the **left** most insertion position (i.e. index) for value `x` to maintain sorted order. This function works similarly to `bisect_right`, but if `x` already appears in the list, the insertion point returned is the first (or leftmost) occurrence of `x`. Therefore, the returned index `i` partitions the list into two halves such that, all elements less than `x` are in `a[:i]` and all elements greater than or equal to `x` are in `a[i:]`.
 
-Here are the permanent links to their implementations: [`bisect_right`](https://github.com/python/cpython/blob/20a56d8becba1a5a958b167fdb43b1a1b9228095/Lib/bisect.py#L21-L54) and [`bisect_left`](https://github.com/python/cpython/blob/20a56d8becba1a5a958b167fdb43b1a1b9228095/Lib/bisect.py#L74-L107)
+Here are the links to their implementations: [`bisect_right`](https://github.com/python/cpython/blob/20a56d8becba1a5a958b167fdb43b1a1b9228095/Lib/bisect.py#L21-L54) and [`bisect_left`](https://github.com/python/cpython/blob/20a56d8becba1a5a958b167fdb43b1a1b9228095/Lib/bisect.py#L74-L107)
 
 # Internalizing bisect_right and bisect_left
 To truly understand these functions, I'll start by creating simplified versions of them and then gradually refine them to match the Python library implementations.
@@ -30,7 +30,7 @@ To truly understand these functions, I'll start by creating simplified versions 
 Let's start with this code for `bisect_right` that does the same thing but is easier to understand in my opinion:
 ```python
 def bisect_right(a: List[int], target: int) -> int:
-  # Assuming `a` is a sorted array
+  # Assuming `a` is a sorted list
   left = 0
   # It's possible to insert a new element at (last index of a) + 1 if the new element is greater than all existing elements
   right = len(a) 
@@ -38,15 +38,14 @@ def bisect_right(a: List[int], target: int) -> int:
   while left < right:
     middle = (left + right) // 2
     if target > a[middle]: 
-      # target must on the right side middle index
+      # The insertion position for `target` must be greater than `middle`
       left = middle + 1 
     elif target < a[middle]:
-      # target must on the left side middle index
+      # The insertion position for `target` must be less than or equal to `middle`
       right = middle
     else:
-      # We want to move right to find the right most insertion position. Imagine an array like [6, 6, 6, 7, 8, 9], the 
-      # right most insertion position for inserting a new "6" should be index 3. So after the insertion the array becomes 
-      # [6, 6, 6, 6, 7, 8, 9]. So if `middle` is at index 2, we still want to update `left` to `middle + 1`.
+      # If `target == a[middle]`, the right most insertion index must be at least `middle + 1`
+      # since all elements to the left of insertion position should be <= `target`.
       left = middle + 1
 
   return left
@@ -70,25 +69,25 @@ def bisect_right(a: List[int], target: int) -> int:
 
 Similarly, we can understand `bisect_left` by looking at a simpler version:
 ```python
-# Assuming `a` is a sorted array
+# Assuming `a` is a sorted list
 def bisect_left(a: List[int], target: int) -> int:
   left, right = 0, len(a) 
 
   while left < right:
     middle = (left + right) // 2
     if target > a[middle]: 
-      # target must be to the right of middle index
+      # The insertion position for `target` must be greater than `middle`
       left = middle + 1 
     elif target < a[middle]:
-      # target must be to the left of middle index
+      # The insertion position for `target` must be less than or equal to `middle`
       right = middle
     else:
-      # We want keep our right boundary as `middle`.
-      # Imagine an array like [4, 5, 6, 6, 6, 8, 9], the left most insertion
-      # position for inserting 6 should be index 2. So after the insertion 
-      # the array becomes [4, 5, 6, 6, 6, 6, 8, 9]. So if `middle` is at index 2, the
-      # left most occurrence of 6 before insertion, we want to update 
-      # `right` to `middle`
+      # If `target == a[middle]`, there are two cases to consider:
+      # 1. If there is only one element whose value equal to target in the list. Then the 
+      # insertion position is equal to `middle`
+      # 2. If there are more than one element whose value equal to target in the list, then 
+      # we want to keep searching left till we find the first occurrence of `target`. So 
+      # the insertion position must be less than or equal to `middle`.
       right = middle
 
   return left
@@ -108,10 +107,10 @@ def bisect_left(a: List[int], target: int) -> int:
   return left
 ```
 
-So now I alway start with writing the simpler version first because it's easy to just write it out without memorizing it. And then I'll merge conditions that do the same thing and finally get what's closer to the implementation in Python's `bisect` library. 
+So now I alway start with writing the simpler version first because it's easy to just write it out without memorizing it. And then I'll merge conditions that do the same thing and finally get to the implementation in Python's `bisect` library. 
 
 # Finding the Leftmost or Rightmost Occurrence of an Element
-In many cases, what we want is not the leftmost or rightmost insertion position for a target element in a sorted array. Instead, we want to find the leftmost or rightmost occurrence of that element. We can modify the return value of the above code to achieve this. E.g. if we want to find the rightmost element that is less than or equal to target, we will return `left - 1` instead in `bisect_right`. If `left - 1` < 0, this means all elements in the array are greater than target.
+In many cases, what we want is not the leftmost or rightmost insertion position for a target element in a sorted list. Instead, we want to find the leftmost or rightmost occurrence of that element. We can modify the return value of the above code to achieve this. E.g. if we want to find the rightmost element that is less than or equal to target, we will return `left - 1` instead in `bisect_right`. If `left - 1` < 0, this means all elements in the list are greater than target.
 
 
 # A note on integer overflow
