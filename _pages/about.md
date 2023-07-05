@@ -16,7 +16,7 @@ redirect_from:
 
 🗣 Talk to me about
 ======
-- Yourself! Life, dreams, reality … I’d love to get to know you
+- Yourself! Life, dreams, reality … I’d love to get to know you 😃
 - What makes you happy, what makes you sad, what keeps you up at night 🌙
 - Any idea, vision, or project that you’re passionate about 🔥
 - AI, Web3, AR/VR, EdTech, Biotech (synthetic biology), Climate/Sustainability, Space exploration, the future of work and education
@@ -28,7 +28,7 @@ redirect_from:
 - I got robbed in SF Hayes Valley at 10:04 a.m. on a Wednesday when I was about to board a bus to work. The robbers took away my work laptop. And I tried chasing the robbers and lost one of my shoes on my way 
 - I used to be a huge K-Pop fan. I covered a K-Pop dance ([The Day We Broke Up](https://www.youtube.com/watch?v=1M1beIdYUl0&ab_channel=ZEA2011) by ZE:A) in front of 100+ people when I was in high school. I also like BTS and Black Pink a lot 🕺
 
-😃 Other interests:
+😌 Other interests:
 ======
 - Badminton 🏸 
 - Minecraft 
