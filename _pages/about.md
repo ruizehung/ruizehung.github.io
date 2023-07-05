@@ -12,7 +12,7 @@ redirect_from:
 - In my senior year pursing a B.S./M.S. degree in **Computer Science** at **Georgia Tech** 🐝
 - Doing AI system research at [SAIL: Systems for Artificial Intelligence Lab @ GT](https://faculty.cc.gatech.edu/~atumanov/index.html#researchgroup)
 - Doing Education Technology research in Anti-cheating at with [Prof. Thad Starner](https://www.cc.gatech.edu/home/thad/)
-- Somewhat involved in the technical committee [Blockchain at Georgia Tech](https://www.blockchain-gt.io/)
+- Part of the technical committee at [Blockchain at Georgia Tech](https://www.blockchain-gt.io/)
 
 🗣 Talk to me about
 ======
