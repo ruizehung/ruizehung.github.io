@@ -32,7 +32,7 @@ redirect_from:
 ======
 - Badminton 🏸 
 - Minecraft 
-- Rreading 📚. [My Goodreads](https://www.goodreads.com/user/show/149365806-ray-hung)
+- Rreading 📚
 - Anime (favorite: That Time I Got Reincarnated as a Slime and Sword Art Online), YouTube, Netflix, movies. I’m a Star Trek fan.
 
 My journey to Computer Science
