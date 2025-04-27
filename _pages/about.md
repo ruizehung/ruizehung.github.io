@@ -12,7 +12,7 @@ redirect_from:
 - Born and raised in Taiwan 🧋
 <!-- - Building [Socratic Mind](https://www.socratic-mind.com/), an AI-powered Scalable Oral Assessment Platform -->
 - Finished my B.S./M.S. in **Computer Science** at **Georgia Tech** 🐝
-- Did AI + Education Technology research with [Prof. Thad Starner](https://www.cc.gatech.edu/home/thad/)
+- Did Education Technology research (with a focus on anti-plagiarism) with [Prof. Thad Starner](https://www.cc.gatech.edu/home/thad/)
 
 🗣 Talk to me about
 ======
