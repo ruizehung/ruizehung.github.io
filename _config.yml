@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Ray (Jui-Tse) Hung"
 title_separator          : "-"
 name                     : &name "Ray (Jui-Tse) Hung"
-description              : &description "SWE Intern @ Databricks, Scale AI, Meta, Amazon | NASA | On Deck Fellow | CS @ Georgia Tech"
+description              : &description "Engineering @ Decagon | ex-Databricks, Scale AI, Meta | CS @ Georgia Tech"
 url                      : https://ruizehung.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ruizehung/ruizehung.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.jpeg"
   name             : "Ray (Jui-Tse) Hung"
   pronouns         : # example: "she/her"  
-  bio              : "SWE Intern @ Databricks, Scale AI, Meta, Amazon | NASA | On Deck Fellow | CS @ Georgia Tech"
+  bio              : "Engineering @ Decagon | ex-Databricks, Scale AI, Meta | CS @ Georgia Tech"
   location         : "Atlanta, GA, U.S."
   employer         : 
   uri              : # URL
